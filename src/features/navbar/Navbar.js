@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
+import React from 'react';
 import {
   Bars3Icon,
   ShoppingCartIcon,
@@ -9,13 +10,19 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectItems } from '../cart/cartSlice';
 import { selectLoggedInUser } from '../auth/authSlice';
+import { ProductList } from '../product-list/components/ProductList';
 
 
 const navigation = [
-  { name: 'Dashboard', link: '#', user: true },
+  { name: 'Home', link: '/', user: true },
+  { name: 'Products', link: '/product-grid', user: true },
   { name: 'Team', link: '#', user: true },
+  { name: 'Blogs', link: '#', user: true },
   { name: 'Admin', link: '/admin', admin: true },
   { name: 'Orders', link: '/admin/orders', admin: true },
+  { name: 'Users', link: '#', admin: true },
+  { name: 'Notifications', link: '#', admin: true },
+  { name: 'ChatBot', link: '/chatbot', user: true },
 
 ];
 const userNavigation = [
@@ -23,6 +30,7 @@ const userNavigation = [
   { name: 'My Orders', link: '/orders' },
   { name: 'Sign out', link: '/logout' },
 ];
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -32,10 +40,21 @@ function NavBar({ children }) {
   const items = useSelector(selectItems);
   const user = useSelector(selectLoggedInUser);
 
+  const adminItems = navigation.filter(item => item.admin).map(item => ({
+    name: item.name,
+    link: item.link,
+  }));
+
+  const userItems = navigation.filter(item => item.user).map(item => ({
+    name: item.name,
+    link: item.link,
+  }));
+
+  console.log(adminItems)
   return (
     <>
       <div className="min-h-full">
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-green-900">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -44,32 +63,55 @@ function NavBar({ children }) {
                     <div className="flex-shrink-0">
                       <Link to="/">
                         <img
-                          className="h-8 w-8"
-                          src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                          className="h-15 w-40"
+                          src="companyLogo.png"
                           alt="Your Company"
                         />
                       </Link>
                     </div>
                     <div className="hidden md:block">
+
                       <div className="ml-10 flex items-baseline space-x-4">
-                        {navigation.map((item) =>
-                          item[user.role] ? (
+                        {user?.role === 'admin'
+                          ? adminItems.map(item => (
                             <Link
+                              activeClass="active"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration={500}
                               key={item.name}
                               to={item.link}
                               className={classNames(
                                 item.current
                                   ? 'bg-gray-900 text-white'
-                                  : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                  : 'text-white hover:bg-green-200 hover:text-gray-600',
                                 'rounded-md px-3 py-2 text-sm font-medium'
                               )}
                               aria-current={item.current ? 'page' : undefined}
                             >
                               {item.name}
                             </Link>
-                          ) : null
-                        )}
+                          ))
+                          : userItems.map(item => (
+                            <Link
+                              key={item.name}
+                              to={item.link}
+                              className={classNames(
+                                item.current
+                                  ? 'bg-gray-900 text-white'
+                                  : 'text-white hover:bg-green-200 hover:text-gray-600',
+                                'rounded-md px-3 py-2 text-sm font-medium'
+                              )}
+                              aria-current={item.current ? 'page' : undefined}
+                            >
+                              {item.name}
+                            </Link>
+                          ))}
                       </div>
+
+                    </div>
+                    <div>
                     </div>
                   </div>
                   <div className="hidden md:block">
@@ -77,7 +119,7 @@ function NavBar({ children }) {
                       <Link to="/cart">
                         <button
                           type="button"
-                          className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                          className="rounded-full bg-white-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                         >
                           <span className="sr-only">View notifications</span>
                           <ShoppingCartIcon
@@ -94,16 +136,18 @@ function NavBar({ children }) {
 
                       {/* Profile dropdown */}
                       <Menu as="div" className="relative ml-3">
-                        <div>
-                          <Menu.Button className="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                            <span className="sr-only">Open user menu</span>
-                            <img
-                              className="h-8 w-8 rounded-full"
-                              src={user.imageUrl}
-                              alt=""
-                            />
-                          </Menu.Button>
-                        </div>
+                        {/* {isLoggedIn ? 'currently' : 'not'} */}
+                        {user ?
+                          <div>
+                            <Menu.Button className="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                              <span className="sr-only">Open user menu</span>
+                              <img
+                                className="h-8 w-8 rounded-full"
+                                src={user?.imageUrl}
+                                alt=""
+                              />
+                            </Menu.Button>
+                          </div> : <Link to={'/login'}><button className='text-white'>Login/SignUp</button></Link>}
                         <Transition
                           as={Fragment}
                           enter="transition ease-out duration-100"
@@ -136,7 +180,7 @@ function NavBar({ children }) {
                   </div>
                   <div className="-mr-2 flex md:hidden">
                     {/* Mobile menu button */}
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-800 hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="sr-only">Open main menu</span>
                       {open ? (
                         <XMarkIcon
@@ -178,16 +222,16 @@ function NavBar({ children }) {
                     <div className="flex-shrink-0">
                       <img
                         className="h-10 w-10 rounded-full"
-                        src={user.imageUrl}
+                        src={user?.imageUrl}
                         alt=""
                       />
                     </div>
                     <div className="ml-3">
                       <div className="text-base font-medium leading-none text-white">
-                        {user.name}
+                        {user?.name}
                       </div>
                       <div className="text-sm font-medium leading-none text-gray-400">
-                        {user.email}
+                        {user?.email}
                       </div>
                     </div>
                     <Link to="/cart">
@@ -225,15 +269,8 @@ function NavBar({ children }) {
           )}
         </Disclosure>
 
-        <header className="bg-white shadow">
-          <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold tracking-tight text-gray-900">
-              E-Commerce
-            </h1>
-          </div>
-        </header>
         <main>
-          <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl  sm:px-6 lg:px-8">
             {children}
           </div>
         </main>

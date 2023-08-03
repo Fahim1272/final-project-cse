@@ -23,11 +23,21 @@ import AdminHome from './pages/AdminHome';
 import AdminProductDetailPage from './pages/AdminProductDetailPage';
 import AdminProductFormPage from './pages/AdminProductFormPage';
 import AdminOrdersPage from './pages/AdminOrdersPage';
+import { positions, Provider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
+import Footer from './features/common/Footer';
+import { ProductList } from './features/product-list/components/ProductList';
+import Chatbot from './features/chatbot/Chatbot';
+
+const options = {
+  timeout: 5000,
+  position: positions.TOP_CENTER
+};
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<Protected><Home></Home></Protected>,
+    element:<Home></Home>
   },
   {
     path: '/admin',
@@ -54,8 +64,12 @@ const router = createBrowserRouter([
     element: <Protected><Checkout></Checkout></Protected>,
   },
   {
+    path: "/product-grid",
+    element: <ProductList></ProductList>,
+  },
+  {
     path: "/product-details/:id",
-    element: <Protected><ProductDetailsPage></ProductDetailsPage></Protected>,
+    element: <ProductDetailsPage></ProductDetailsPage>
   },
   {
     path: '/admin/product-detail/:id',
@@ -103,6 +117,13 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: '/chatbot',
+    element: (
+      <Chatbot></Chatbot>
+      // we will add Page later right now using component directly.
+    ),
+  },
+  {
     path: '/profile',
     element: (
       <UserProfilePage></UserProfilePage>
@@ -143,9 +164,12 @@ function App() {
   return (
     <>
       <div className="App">
+      <Provider template={AlertTemplate} {...options}>
         <RouterProvider router={router} />
         {/* Link must be inside the Provider */}
+        </Provider>
       </div>
+      <Footer></Footer>
     </>
   );
 }

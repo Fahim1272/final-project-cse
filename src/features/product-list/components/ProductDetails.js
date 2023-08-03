@@ -4,9 +4,23 @@ import { RadioGroup } from '@headlessui/react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProductByIdAsync, selectProductById } from '../ProductSlice';
 import { useParams } from 'react-router-dom';
-import { addToCartAsync } from '../../cart/cartSlice';
+import { addToCartAsync, selectCartStatus, selectItems } from '../../cart/cartSlice';
 import { selectLoggedInUser } from '../../auth/authSlice';
 import { discountedPrice } from '../../../app/constants';
+import { useAlert } from "react-alert";
+import { BallTriangle } from 'react-loader-spinner';
+import React, { useRef, } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import './style.css';
+// import required modules
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+
 
 // TODO: In server data we will add colors, sizes , highlights. to each product
 
@@ -43,28 +57,51 @@ export default function ProductDetails() {
   const [selectedColor, setSelectedColor] = useState(colors[0])
   const [selectedSize, setSelectedSize] = useState(sizes[2])
   const user = useSelector(selectLoggedInUser)
+  const items = useSelector(selectItems)
   const dispatch = useDispatch()
   const params = useParams();
   const product = useSelector(selectProductById)
-  
-  const handleCart =(e)=>{
+  const alert = useAlert();
+  const status = useSelector(selectCartStatus)
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+  const handleCart = (e) => {
     e.preventDefault();
-    const newItem  = {...product,quantity:1,user:user.id }
-    delete newItem['id'];
-    dispatch(addToCartAsync(newItem))
+    if (items.findIndex(item => {
+      return item.productId === product.id;
+    }) < 0) {
+      const newItem = { ...product, productId: product.id, quantity: 1, user: user?.id }
+      delete newItem['id'];
+      dispatch(addToCartAsync(newItem))
+      alert.show("Product Added To Cart Successfully!");
+    } else {
+      alert.show("Product already added to Cart");
+    }
+
   }
-  useEffect(()=>{
+  useEffect(() => {
     dispatch(fetchProductByIdAsync(params.id))
-  },[dispatch, params.id])
+  }, [dispatch, params.id])
   return (
     <div className="bg-white">
+      {status === 'loading' ?
+        <BallTriangle
+          height={100}
+          width={100}
+          radius={5}
+          color="#4fa94d"
+          ariaLabel="ball-triangle-loading"
+          wrapperClass={{}}
+          wrapperStyle=""
+          visible={true}
+        /> : null}
       {product && <div className="pt-6">
         <nav aria-label="Breadcrumb">
           <ol role="list" className="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             {product.breadcrumbs && product.breadcrumbs.map((breadcrumb) => (
               <li key={breadcrumb.id}>
                 <div className="flex items-center">
-                  <a href={breadcrumb.href} className="mr-2 text-sm font-medium text-gray-900">
+                  <a href={breadcrumb.href} className="mr-2 text-2xl font-medium text-green-900">
                     {breadcrumb.name}
                   </a>
                   <svg
@@ -81,7 +118,7 @@ export default function ProductDetails() {
               </li>
             ))}
             <li className="text-sm">
-              <a href={product.href} aria-current="page" className="font-medium text-gray-500 hover:text-gray-600">
+              <a href={product.href} aria-current="page" className="font-medium text-2xl text-green-700 hover:text-green-700">
                 {product.title}
               </a>
             </li>
@@ -89,41 +126,60 @@ export default function ProductDetails() {
         </nav>
 
         {/* Image gallery */}
-        <div className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
-          <div className="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
-            <img
-              src={product.images[0]}
-              alt={product.title}
-              className="h-full w-full object-cover object-center"
-            />
-          </div>
-          <div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
-            <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-              <img
-                src={product.images[1]}
-                alt={product.title}
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
-            <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-              <img
-                src={product.images[2]}
-                alt={product.title}
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
-          </div>
-          <div className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
-            <img
-              src={product.images[3]}
-              alt={product.title}
-              className="h-full w-full object-cover object-center"
-            />
-          </div>
+        <div id='app' className="mx-auto mt-6 max-w-xl h-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
+          <Swiper
+            style={{
+              '--swiper-navigation-color': '#fff',
+              '--swiper-pagination-color': '#fff',
+            }}
+            loop={true}
+            spaceBetween={10}
+            navigation={true}
+            thumbs={{ swiper: thumbsSwiper }}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiper2 w-[500px] h-[450px] mb-0"
+          >
+            <SwiperSlide>
+              <img src={product.images[0]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={product.images[1]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={product.images[2]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={product.images[3]} />
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            onClick={setThumbsSwiper}
+            loop={true}
+            spaceBetween={10}
+            slidesPerView={4}
+            freeMode={true}
+            watchSlidesProgress={true}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiper w-[500px] h-20 -mt-32"
+          >
+            <SwiperSlide>
+              <img src={product.images[0]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={product.images[1]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={product.images[2]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={product.images[3]} />
+            </SwiperSlide>
+          </Swiper>
+        
         </div>
 
         {/* Product info */}
-        <div className="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16">
+        <div className="mx-auto mt-30 max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16">
           <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
             <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">{product.title}</h1>
           </div>
@@ -133,8 +189,8 @@ export default function ProductDetails() {
             <h2 className="sr-only">Product information</h2>
             <p className="text-xl line-through tracking-tight text-gray-900">{product.price}Tk.</p>
             <p className="text-3xl tracking-tight text-gray-900">
-                ${discountedPrice(product)}
-              </p>
+              Tk{discountedPrice(product)}
+            </p>
 
             {/* Reviews */}
             <div className="mt-6">
@@ -197,9 +253,9 @@ export default function ProductDetails() {
               {/* Sizes */}
               <div className="mt-10">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-sm font-medium text-gray-900">Size</h3>
-                  <a href="#" className="text-sm font-medium text-indigo-600 hover:text-indigo-500">
-                    Size guide
+                  <h3 className="text-sm font-medium text-gray-900">Quantity</h3>
+                  <a href="#" className="text-sm font-medium text-green-600 hover:text-green-500">
+                    Quantity Guide
                   </a>
                 </div>
 
@@ -216,7 +272,7 @@ export default function ProductDetails() {
                             size.inStock
                               ? 'cursor-pointer bg-white text-gray-900 shadow-sm'
                               : 'cursor-not-allowed bg-gray-50 text-gray-200',
-                            active ? 'ring-2 ring-indigo-500' : '',
+                            active ? 'ring-2 ring-green-500' : '',
                             'group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6'
                           )
                         }
@@ -228,7 +284,7 @@ export default function ProductDetails() {
                               <span
                                 className={classNames(
                                   active ? 'border' : 'border-2',
-                                  checked ? 'border-indigo-500' : 'border-transparent',
+                                  checked ? 'border-green-500' : 'border-transparent',
                                   'pointer-events-none absolute -inset-px rounded-md'
                                 )}
                                 aria-hidden="true"
@@ -257,9 +313,9 @@ export default function ProductDetails() {
               </div>
 
               <button
-                onClick={handleCart }
+                onClick={handleCart}
                 type="submit"
-                className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-green-600 px-8 py-3 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
               >
                 Add to Cart
               </button>
@@ -298,6 +354,7 @@ export default function ProductDetails() {
               </div>
             </div>
           </div>
+
         </div>
       </div>}
     </div>

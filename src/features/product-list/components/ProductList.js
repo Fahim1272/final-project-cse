@@ -1,7 +1,7 @@
 import React, { useState, Fragment, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { ChevronLeftIcon, ChevronRightIcon, StarIcon } from '@heroicons/react/20/solid'
-import { fetchAllProductsAsync, selectAllProducts, fetchProductsByFiltersAsync, selectTotalItems, selectColors, selectCategories, fetchCategoriesAsync, fetchColorsAsync } from '../ProductSlice';
+import { fetchAllProductsAsync, selectAllProducts, fetchProductsByFiltersAsync, selectTotalItems, selectColors, selectCategories, fetchCategoriesAsync, fetchColorsAsync, selectProductListStatus } from '../ProductSlice';
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
@@ -10,6 +10,8 @@ import { ITEMS_PER_PAGE } from '../../../app/constants';
 import { discountedPrice } from '../../../app/constants';
 import { fetchCategories, fetchColors } from '../productAPI';
 import Pagination from '../../common/Pagination';
+import { BallTriangle } from 'react-loader-spinner';
+import './style.css'
 
 
 const sortOptions = [
@@ -35,12 +37,13 @@ function classNames(...classes) {
 
 
 export function ProductList() {
-  
+
   const dispatch = useDispatch();
   const products = useSelector(selectAllProducts);
   const colors = useSelector(selectColors);
   const categories = useSelector(selectCategories);
   const totalItems = useSelector(selectTotalItems);
+  const status = useSelector(selectProductListStatus)
   const filters = [
     {
       id: 'color',
@@ -57,6 +60,8 @@ export function ProductList() {
   const [sort, setSort] = useState({});
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const [page, setPage] = useState([]);
+  const [query, setQuery] = useState("");
+  console.log(products.filter(product=>product.title.toLowerCase().includes("ro")));
 
 
   const handleFilter = (e, section, option) => {
@@ -82,7 +87,7 @@ export function ProductList() {
     console.log({ sort });
     setSort(sort);
   }
-  const handlePage = ( page) => {
+  const handlePage = (page) => {
     console.log({ page });
     setPage(page);
   }
@@ -90,32 +95,50 @@ export function ProductList() {
     const pagination = { _page: page, _limit: ITEMS_PER_PAGE }
     dispatch(fetchProductsByFiltersAsync({ filter, sort, pagination }))
   }, [dispatch, filter, sort, page])
-  useEffect(()=>{
+  useEffect(() => {
     setPage(1)
-  },[totalItems,sort])
-  useEffect(()=>{
+  }, [totalItems, sort])
+  useEffect(() => {
     dispatch(fetchCategoriesAsync())
     dispatch(fetchColorsAsync())
-  },[])
+  }, [])
   return (
     <div>
       <div>
-        <div className="bg-white">
+        <div className="bg-green-100 ">
+
           <div>
             <MobileFilter
-             handleFilter={handleFilter} 
-             mobileFiltersOpen={mobileFiltersOpen} 
-             setMobileFiltersOpen={setMobileFiltersOpen}
-             filters={filters}
-             ></MobileFilter>
+              handleFilter={handleFilter}
+              mobileFiltersOpen={mobileFiltersOpen}
+              setMobileFiltersOpen={setMobileFiltersOpen}
+              filters={filters}
+            ></MobileFilter>
 
             <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900">All Products</h1>
+              <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-14">
+                <h1 className="text-2xl font-bold tracking-tight text-gray-900">All Products</h1>
 
                 <div className="flex items-center">
+                  
+                  {/* Search optiojn is here */}
+
+                  <div className=" mr-4 relative  rounded-2xl shadow-sm">
+                    <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                      <span className="text-gray-500 sm:text-sm"></span>
+                    </div>
+                    <input
+                    onChange={e=>setQuery(e.target.value)}
+                      type="text"
+                      name="price"
+                      id="price"
+                      className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
+                      placeholder="Search Product here"
+                    />
+                  </div>
                   <Menu as="div" className="relative inline-block text-left">
                     <div>
+
                       <Menu.Button className="group inline-flex justify-center text-sm font-medium text-gray-700 hover:text-gray-900">
                         Sort
                         <ChevronDownIcon
@@ -179,22 +202,22 @@ export function ProductList() {
                 </h2>
 
                 <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
-                  <DesktopFilter 
-                  handleFilter={handleFilter}
-                  filters={filters} 
-                  
+                  <DesktopFilter
+                    handleFilter={handleFilter}
+                    filters={filters}
+
                   ></DesktopFilter>
                   {/* Product grid */}
                   <div className="lg:col-span-3">
-                    <ProductGrid products={products} ></ProductGrid>
+                    <ProductGrid products={products} status={status} query={query}></ProductGrid>
                   </div>
                 </div>
               </section>
-              <Pagination 
-              page={page} 
-              setPage={setPage} 
-              handlePage={handlePage} 
-              totalItems={totalItems}
+              <Pagination
+                page={page}
+                setPage={setPage}
+                handlePage={handlePage}
+                totalItems={totalItems}
               ></Pagination>
             </main>
           </div>
@@ -205,7 +228,7 @@ export function ProductList() {
 }
 
 
-function MobileFilter({ mobileFiltersOpen, setMobileFiltersOpen, handleFilter,filters }) {
+function MobileFilter({ mobileFiltersOpen, setMobileFiltersOpen, handleFilter, filters }) {
 
   return (
     <div>
@@ -327,12 +350,12 @@ function DesktopFilter({ handleFilter, filters }) {
                     </ul> */}
 
         {filters.map((section) => (
-          <Disclosure as="div" key={section.id} className="border-b border-gray-200 py-6">
+          <Disclosure as="div" key={section.id} className="border-b border-green-800 py-6">
             {({ open }) => (
               <>
                 <h3 className="-my-3 flow-root">
-                  <Disclosure.Button className="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500">
-                    <span className="font-medium text-gray-900">{section.name}</span>
+                  <Disclosure.Button className="flex w-full items-center justify-between bg-green-100 py-3 text-sm text-gray-400 hover:text-gray-500">
+                    <span className="font-medium text-gray-950">{section.name}</span>
                     <span className="ml-6 flex items-center">
                       {open ? (
                         <MinusIcon className="h-5 w-5" aria-hidden="true" />
@@ -354,11 +377,11 @@ function DesktopFilter({ handleFilter, filters }) {
                           defaultChecked={option.checked}
                           onChange={e => handleFilter(e, section, option)}
                           // onChange={e=>console.log(e.target.value)}
-                          className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          className="h-4 w-4 rounded border-gray-300 text-green-800 focus:ring-green-800"
                         />
                         <label
                           htmlFor={`filter-${section.id}-${optionIdx}`}
-                          className="ml-3 text-sm text-gray-600"
+                          className="ml-3 text-sm text-gray-950"
                         >
                           {option.label}
                         </label>
@@ -375,15 +398,26 @@ function DesktopFilter({ handleFilter, filters }) {
   )
 }
 
-function ProductGrid({ products }) {
+function ProductGrid({ products, status, query }) {
   return (
     <div>
-      <div className="bg-white">
+      <div className="bg-green-100">
         <div className="mx-auto max-w-2xl px-4 py-0 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8">
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-            {products.map(product => (
+            {status === 'loading' ?
+              <BallTriangle
+                height={100}
+                width={100}
+                radius={5}
+                color="#4fa94d"
+                ariaLabel="ball-triangle-loading"
+                wrapperClass={{}}
+                wrapperStyle=""
+                visible={true}
+              /> : null}
+            {products.filter(product=>product.title.toLowerCase().includes(query)).map(product => (
               <Link to={`/product-details/${product.id}`}>
-                <div key={product.id} className="group relative border-solid border-2 p-2 border-green-200 rounded">
+                <div key={product.id} className="group relative border-solid border-4 p-2  border-green-800 rounded-2xl">
                   <div className="aspect-h-1 min-h-60 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-60">
                     <img
                       src={product.thumbnail}
@@ -396,7 +430,7 @@ function ProductGrid({ products }) {
                       <h3 className="text-sm text-gray-700">
                         <div href={product.thumbnail}>
                           <span aria-hidden="true" className="absolute inset-0" />
-                          {product.title}
+                          {product.title.slice(0, 10)}
                         </div>
                       </h3>
                       <p className="mt-1 text-sm text-gray-500">
@@ -411,6 +445,16 @@ function ProductGrid({ products }) {
                     </div>
 
                   </div>
+                  {product.deleted && (
+                    <div>
+                      <p className="text-sm text-red-400">product deleted</p>
+                    </div>
+                  )}
+                  {product.stock <= 0 && (
+                    <div>
+                      <p className="text-sm text-red-400">Out of stock</p>
+                    </div>
+                  )}
                 </div>
               </Link>
             ))}

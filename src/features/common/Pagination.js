@@ -4,7 +4,7 @@ import { ITEMS_PER_PAGE } from "../../app/constants";
 export default function Pagination({ page, setPage, handlePage, totalItems }) {
     const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
     return (
-      <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
+      <div className="flex items-center justify-between border-t border-gray-200 bg-green-100 px-4 py-3 sm:px-6">
         <div className="flex flex-1 justify-between sm:hidden">
           <div
             onClick={(e) => handlePage(page > 1 ? page - 1 : page)}
@@ -55,8 +55,8 @@ export default function Pagination({ page, setPage, handlePage, totalItems }) {
                   aria-current="page"
                   className={`relative cursor-pointer z-10 inline-flex items-center ${
                     index + 1 === page
-                      ? 'bg-indigo-600 text-white'
-                      : 'text-gray-400'
+                      ? 'bg-green-800 text-white'
+                      : 'text-green-400'
                   } px-4 py-2 text-sm font-semibold  focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
                 >
                   {index + 1}

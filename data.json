@@ -2,44 +2,43 @@
   "products": [
     {
       "id": 1,
-      "title": "iPhone 9",
-      "description": "An apple mobile whoodsich is nothing like apple",
-      "price": 549,
+      "title": "RoshoGolla",
+      "description": "Rosogolla is based on the real-life story of the inventor of Bengal's own 'Rosogolla'. The story revolves around the life and work of Nobin Chandra Das, a young man with a romantic heart and a brilliant mind.",
+      "price": 599,
       "discountPercentage": 12.96,
       "rating": 4.69,
       "stock": 94,
       "colors": "Apple",
       "category": "sweets-dessert",
-      "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+      "thumbnail": "https://kitchenofdebjani.com/wp-content/uploads/2023/01/khejur-gurer-rosogolla-Recipe-Debjanir-Rannaghar.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/1/1.jpg",
-        "https://i.dummyjson.com/data/products/1/2.jpg",
-        "https://i.dummyjson.com/data/products/1/3.jpg",
-        "https://i.dummyjson.com/data/products/1/4.jpg",
-        "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        "https://static.toiimg.com/thumb/msid-67284341,width-1280,resizemode-4/67284341.jpg",
+        "https://www.playfulcooking.com/wp-content/uploads/2020/10/roshogolla-06.jpg",
+        "https://1.bp.blogspot.com/-XZyf6ZRQY1I/XgtDF8MAUmI/AAAAAAAAIck/6r8I0gS8ziYU781V97zIf68njOTHAH2vQCEwYBhgL/s1600/Nolen%2BGur%2BRosogolla.JPG",
+        "https://kitchenofdebjani.com/wp-content/uploads/2023/01/khejur-gurer-rosogolla-Recipe-Debjanir-Rannaghar.jpg"
       ]
     },
     {
       "id": 2,
-      "title": "iPhone X",
+      "title": "Nolen Gurer Sondesh",
       "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
       "price": 899,
       "discountPercentage": 17.94,
       "rating": 4.44,
-      "stock": 34,
+      "stock": 40,
       "colors": "Apple",
       "category": "sweets-dessert",
-      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "thumbnail": "https://i0.wp.com/thegastronomicbong.com/wp-content/uploads/2019/10/gurer-sandesh-recipe-step-by-step.jpg?fit=5225%2C7838&ssl=1",
       "images": [
-        "https://i.dummyjson.com/data/products/2/1.jpg",
-        "https://i.dummyjson.com/data/products/2/2.jpg",
-        "https://i.dummyjson.com/data/products/2/3.jpg",
-        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+        "https://motionsandemotions.com/wp-content/uploads/2023/04/Untitled-design-56-1-1024x1024.jpg",
+        "https://1.bp.blogspot.com/-QE3glcC658E/X1knED5xYfI/AAAAAAAAL_M/8w1XKCk-l90PCoWtpD0_gR_2QU-L9J7hwCLcBGAsYHQ/s1600/Nolen%2Bgurer%2BSandesh.JPG",
+        "https://www.bongcravings.com/wp-content/uploads/2017/05/17191324_768471046635728_1142348009439145681_n.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhlTXCfuig0D2gpeIPIbvn2m_blv8FF3V7dkKomgCrsNyhEB7I1Qrth1457IbTZFnZmGsUccp0CiZTezzG-C7eiK1psH_NW8lqd_oHk8BW4z6cLG6gpdTaEwxJi13QxlmXL5ist29pnX4UDg0J1lP7dihxGfdBgPVIQRIg6HAjV0flWAHxiITQ1Tma/s3933/phonto.jpg"
       ]
     },
     {
       "id": 3,
-      "title": "Samsung Universe 9",
+      "title": "Shahi Jilapi",
       "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
       "price": 1249,
       "discountPercentage": 15.46,
@@ -47,618 +46,157 @@
       "stock": 36,
       "colors": "Samsung",
       "category": "sweets-dessert",
-      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Jalebi_-_Served_in_a_Plate.JPG",
       "images": [
-        "https://i.dummyjson.com/data/products/3/1.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/a/a3/Jalebi_-_Served_in_a_Plate.JPG",
+        "https://www.upoharbd.com/images/uploads/Food/Shahi-Jilapi-star-dhaka.jpg",
+        "https://c8.alamy.com/comp/J8E3AC/dhaka-bangladesh-28th-may-2017-shahi-jilapi-on-the-first-day-of-muslim-J8E3AC.jpg",
+        "https://www.tbsnews.net/sites/default/files/styles/infograph/public/images/2020/05/14/jilapi.jpg"
       ]
     },
     {
-      "id": 4,
-      "title": "OPPOF19",
-      "description": "OPPO F19 is officially announced on April 2021.",
-      "price": 280,
-      "discountPercentage": 17.91,
-      "rating": 4.3,
-      "stock": 123,
-      "colors": "OPPO",
+      "title": "Chomchom-2",
+      "description": "Cham cham, Chomchom or chum chum (Bengali: চমচম) is a traditional Bengali sweet, popular throughout the Indian subcontinent.",
+      "color": "",
       "category": "sweets-dessert",
-      "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+      "price": 450,
+      "discountPercentage": 2,
+      "stock": 40,
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/BD_Porabarir_Chamcham.JPG/1200px-BD_Porabarir_Chamcham.JPG",
       "images": [
-        "https://i.dummyjson.com/data/products/4/1.jpg",
-        "https://i.dummyjson.com/data/products/4/2.jpg",
-        "https://i.dummyjson.com/data/products/4/3.jpg",
-        "https://i.dummyjson.com/data/products/4/4.jpg",
-        "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
-      ]
+        "https://roshbd.com/wp-content/uploads/2016/11/rosh-chomchom-1.jpg",
+        "https://i.ytimg.com/vi/v-CwFvbPuTk/maxresdefault.jpg",
+        "https://i.ytimg.com/vi/ADn1-UImPQU/maxresdefault.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/BD_Porabarir_Chamcham.JPG/1200px-BD_Porabarir_Chamcham.JPG"
+      ],
+      "rating": 0,
+      "id": 38
     },
     {
-      "id": 5,
-      "title": "Huawei P30",
-      "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-      "price": 499,
-      "discountPercentage": 10.58,
-      "rating": 4.09,
-      "stock": 32,
-      "colors": "Huawei",
+      "title": "Semai Pitha",
+      "description": "Semai Pitha/Chui Pitha with Orzo. We still marvel at how some recipes with the simplest ingredients can taste so amazing!",
+      "color": "",
       "category": "sweets-dessert",
-      "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+      "price": 590,
+      "discountPercentage": 4,
+      "stock": 40,
+      "thumbnail": "https://i.ytimg.com/vi/yX2e-9jIqNM/maxresdefault.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
-      ]
+        "https://i.ytimg.com/vi/R6XjoNI7ENo/maxresdefault.jpg",
+        "https://img-global.cpcdn.com/recipes/b69a510813d50ac3/680x482cq70/%E0%A6%B9%E0%A6%A4-%E0%A6%95%E0%A6%9F-%E0%A6%B8%E0%A6%AE%E0%A6%87%E0%A6%9A%E0%A6%B8-%E0%A6%AA%E0%A6%A0semai-chushi-pitha-recipe-in-bengali-%E0%A6%B0%E0%A6%B8%E0%A6%AA%E0%A6%B0-%E0%A6%AA%E0%A6%B0%E0%A6%A7%E0%A6%A8-%E0%A6%9B%E0%A6%AC.jpg",
+        "https://www.rannaghaar.com/wp-content/uploads/2018/02/semai-pitha3.jpg",
+        "https://i.ytimg.com/vi/yX2e-9jIqNM/maxresdefault.jpg"
+      ],
+      "rating": 0,
+      "id": 39
     },
     {
-      "id": 6,
-      "title": "MacBook Pro",
-      "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
-      "price": 1749,
-      "discountPercentage": 11.02,
-      "rating": 4.57,
-      "stock": 83,
-      "colors": "Apple",
+      "title": "Crabs",
+      "description": "How is crab cooked?\nThe Easiest Way to Cook Crab - The Perfect Tide\nPlace the crab in the boiling water and cover with the lid. Boil for 12 minutes. Remove the crab from the pot and let the crab cool completely on a large plate prior to serving or storing. It typically takes 15-30 minutes for the crab to cool.",
+      "color": "",
       "category": "foods",
-      "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+      "price": 690,
+      "discountPercentage": 2,
+      "stock": 40,
+      "thumbnail": "https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/8214596_Spicy%20Crab%20Coxs%20Bazar.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/6/1.png",
-        "https://i.dummyjson.com/data/products/6/2.jpg",
-        "https://i.dummyjson.com/data/products/6/3.png",
-        "https://i.dummyjson.com/data/products/6/4.jpg"
-      ]
+        "https://www.tasteofhome.com/wp-content/uploads/2017/10/Classic-Crab-Boil_EXPS_THCOMS17_209979_B09_08_6b.jpg",
+        "https://4.imimg.com/data4/BM/TG/MY-4023169/crab-seafood-500x500.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/0a/Kepiting_Saus_Tiram_2.JPG",
+        "https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/8214596_Spicy%20Crab%20Coxs%20Bazar.jpg"
+      ],
+      "rating": 0,
+      "id": 40
     },
     {
-      "id": 7,
-      "title": "Samsung Galaxy Book",
-      "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
-      "price": 1499,
-      "discountPercentage": 4.15,
-      "rating": 4.25,
+      "title": "Pan",
+      "description": "Betel leaf is one of the important cash crops that gaining popularity in recent time in Bangladesh.",
+      "color": "",
+      "category": "foods",
+      "price": 1020,
+      "discountPercentage": 10,
+      "stock": 41,
+      "thumbnail": "https://aristaexport.com/images/products/92-fresh-betel-leaf-1.jpg",
+      "images": [
+        "https://5.imimg.com/data5/YC/BF/MY-43998955/meetha-pan-betel-leaves-500x500.jpg",
+        "https://static.toiimg.com/thumb/97030129.cms?width=400&height=300&resizemode=4&imgsize=81604 ",
+        "https://5.imimg.com/data5/RC/UM/BR/IOS-54856086/product-jpeg-500x500.png",
+        "https://aristaexport.com/images/products/92-fresh-betel-leaf-1.jpg"
+      ],
+      "rating": 0,
+      "id": 41
+    },
+    {
+      "title": "Mango- Fojli",
+      "description": "Fazli or Fakirbhog is a variety of Amer. The fruit is found in eastern South Asia, especially in Bangladesh and West Bengal and Bihar in India. This variety is late fruiting than other varieties of mango. Fazli mango is commonly used in sauces and pickles.",
+      "color": "",
+      "category": "fruits",
+      "price": 1500,
+      "discountPercentage": 21,
+      "stock": 40,
+      "thumbnail": "https://i0.wp.com/foodhub.makehub.com.bd/wp-content/uploads/2022/06/800-800-Fazli.jpg",
+      "images": [
+        "https://www.tbsnews.net/sites/default/files/styles/infograph/public/images/2021/10/22/fazli_mango_0.jpg",
+        "https://pbs.twimg.com/media/D7to77OV4AA7nYp.jpg",
+        "https://www.bongodorshon.com/uploads/story_image/The_story_of_naming_the_king_of_mangoes_Fazli_bd_cover.jpg",
+        "https://i0.wp.com/foodhub.makehub.com.bd/wp-content/uploads/2022/06/800-800-Fazli.jpg"
+      ],
+      "rating": 0,
+      "id": 42
+    },
+    {
+      "title": "Pineapple - From Rangamati",
+      "description": "The pineapple produced in Modhupur is tasty and famous all over the country. It is also called \"Honey of Modhupur\". ",
+      "color": "",
+      "category": "fruits",
+      "price": 1240,
+      "discountPercentage": 5,
+      "stock": 40,
+      "thumbnail": "https://chaldn.com/_mpimage/anaros-pineapple-1-pcs?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D61358&q=low&v=1&m=1600",
+      "images": [
+        "https://www.globaltimes.cn/Portals/0//attachment/2020/2020-07-06/31e81b3f-54dc-4314-beb0-4ce5d9c46a38.jpeg",
+        "https://cdais.net/wp-content/uploads/2018/09/3.Pineapples-%E2%80%93-part-of-the-landscape-in-more-ways-than-one..png",
+        "globaltimes.cn/Portals/0/attachment/2020/2020-07-06/6769f479-ba30-461c-bfc2-8c495d86d88b.jpeg",
+        "https://chaldn.com/_mpimage/anaros-pineapple-1-pcs?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D61358&q=low&v=1&m=1600"
+      ],
+      "rating": 0,
+      "id": 43
+    },
+    {
+      "title": "Crafts",
+      "description": "What are the famous handicrafts of Bangladesh?\nOn the other hand, Narayanganj is famous for Jamdani and Muslin sarees. Cotton sarees, lungis, t-shirts are produced almost everywhere in Bangladesh. Besides, Nakhshikatha, Shital Paati and jewellery are also popular handicrafts of Bangladesh.",
+      "color": "",
+      "category": "artcrafts",
+      "price": 1232,
+      "discountPercentage": 2,
       "stock": 50,
-      "colors": "Samsung",
-      "category": "foods",
-      "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+      "thumbnail": "https://c8.alamy.com/comp/MCNWDG/dhaka-bangladesh-16th-april-2018-bangladeshi-shopkeeper-displayed-their-handicraft-products-for-sale-in-the-handicraft-products-fairs-at-bangla-academy-compound-in-dhaka-bangladesh-on-april-16-2018-bangladesh-small-and-cottage-industries-corporation-bscic-and-bangla-academy-jointly-organized-handicraft-products-fairs-to-celebration-bangla-new-year-1425-in-dhaka-bangladesh-MCNWDG.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/7/1.jpg",
-        "https://i.dummyjson.com/data/products/7/2.jpg",
-        "https://i.dummyjson.com/data/products/7/3.jpg",
-        "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
-      ]
+        "https://media.gettyimages.com/id/933192212/photo/different-type-of-mud-pot-market-in-dhaka-bangladesh-on-march-17-2018-mud-pot-business-is-a.jpg?s=612x612&w=gi&k=20&c=nkiXCZcBTxaX11jbSTnUg9kfdKsZ2W8CQE_c45AAAsI=",
+        "https://st4.depositphotos.com/12722406/25147/i/1600/depositphotos_251470320-stock-photo-mud-pots-handicraft-products-market.jpg",
+        "https://media.gettyimages.com/id/933192290/photo/different-type-of-mud-pot-market-in-dhaka-bangladesh-on-march-17-2018-mud-pot-business-is-a.jpg?s=612x612&w=gi&k=20&c=1q2BP-K9szMdzAzhNWi2mfd4eDG-148fIGZFcdLJKkw=",
+        "https://c8.alamy.com/comp/MCNWDG/dhaka-bangladesh-16th-april-2018-bangladeshi-shopkeeper-displayed-their-handicraft-products-for-sale-in-the-handicraft-products-fairs-at-bangla-academy-compound-in-dhaka-bangladesh-on-april-16-2018-bangladesh-small-and-cottage-industries-corporation-bscic-and-bangla-academy-jointly-organized-handicraft-products-fairs-to-celebration-bangla-new-year-1425-in-dhaka-bangladesh-MCNWDG.jpg"
+      ],
+      "rating": 0,
+      "id": 44
     },
     {
-      "id": 8,
-      "title": "Microsoft Surface Laptop 4",
-      "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
-      "price": 1499,
-      "discountPercentage": 10.23,
-      "rating": 4.43,
-      "stock": 68,
-      "colors": "Microsoft Surface",
-      "category": "foods",
-      "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/8/1.jpg",
-        "https://i.dummyjson.com/data/products/8/2.jpg",
-        "https://i.dummyjson.com/data/products/8/3.jpg",
-        "https://i.dummyjson.com/data/products/8/4.jpg",
-        "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 9,
-      "title": "Infinix INBOOK",
-      "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
-      "price": 1099,
-      "discountPercentage": 11.83,
-      "rating": 4.54,
-      "stock": 96,
-      "colors": "Infinix",
-      "category": "foods",
-      "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/9/1.jpg",
-        "https://i.dummyjson.com/data/products/9/2.png",
-        "https://i.dummyjson.com/data/products/9/3.png",
-        "https://i.dummyjson.com/data/products/9/4.jpg",
-        "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 10,
-      "title": "HP Pavilion 15-DK1056WM",
-      "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
-      "price": 1099,
-      "discountPercentage": 6.18,
-      "rating": 4.43,
-      "stock": 89,
-      "colors": "HP Pavilion",
-      "category": "foods",
-      "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
-      "images": [
-        "https://i.dummyjson.com/data/products/10/1.jpg",
-        "https://i.dummyjson.com/data/products/10/2.jpg",
-        "https://i.dummyjson.com/data/products/10/3.jpg",
-        "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
-      ]
-    },
-    {
-      "id": 11,
-      "title": "perfume Oil",
-      "description": "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
-      "price": 13,
-      "discountPercentage": 8.4,
-      "rating": 4.26,
-      "stock": 65,
-      "colors": "Impression of Acqua Di Gio",
-      "category": "fruits",
-      "thumbnail": "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/11/1.jpg",
-        "https://i.dummyjson.com/data/products/11/2.jpg",
-        "https://i.dummyjson.com/data/products/11/3.jpg",
-        "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 12,
-      "title": "Brown Perfume",
-      "description": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
-      "price": 40,
-      "discountPercentage": 15.66,
-      "rating": 4,
-      "stock": 52,
-      "colors": "Royal_Mirage",
-      "category": "fruits",
-      "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/12/1.jpg",
-        "https://i.dummyjson.com/data/products/12/2.jpg",
-        "https://i.dummyjson.com/data/products/12/3.png",
-        "https://i.dummyjson.com/data/products/12/4.jpg",
-        "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 13,
-      "title": "Fog Scent Xpressio Perfume",
-      "description": "Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men",
-      "price": 13,
-      "discountPercentage": 8.14,
-      "rating": 4.59,
-      "stock": 61,
-      "colors": "Fog Scent Xpressio",
-      "category": "fruits",
-      "thumbnail": "https://i.dummyjson.com/data/products/13/thumbnail.webp",
-      "images": [
-        "https://i.dummyjson.com/data/products/13/1.jpg",
-        "https://i.dummyjson.com/data/products/13/2.png",
-        "https://i.dummyjson.com/data/products/13/3.jpg",
-        "https://i.dummyjson.com/data/products/13/4.jpg",
-        "https://i.dummyjson.com/data/products/13/thumbnail.webp"
-      ]
-    },
-    {
-      "id": 14,
-      "title": "Non-Alcoholic Concentrated Perfume Oil",
-      "description": "Original Al Munakh® by Mahal Al Musk | Our Impression of Climate | 6ml Non-Alcoholic Concentrated Perfume Oil",
-      "price": 120,
-      "discountPercentage": 15.6,
-      "rating": 4.21,
-      "stock": 114,
-      "colors": "Al Munakh",
-      "category": "fruits",
-      "thumbnail": "https://i.dummyjson.com/data/products/14/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/14/1.jpg",
-        "https://i.dummyjson.com/data/products/14/2.jpg",
-        "https://i.dummyjson.com/data/products/14/3.jpg",
-        "https://i.dummyjson.com/data/products/14/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 15,
-      "title": "Eau De Perfume Spray",
-      "description": "Genuine  Al-Rehab spray perfume from UAE/Saudi Arabia/Yemen High Quality",
-      "price": 30,
-      "discountPercentage": 10.99,
-      "rating": 4.7,
-      "stock": 105,
-      "colors": "Lord - Al-Rehab",
-      "category": "fruits",
-      "thumbnail": "https://i.dummyjson.com/data/products/15/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/15/1.jpg",
-        "https://i.dummyjson.com/data/products/15/2.jpg",
-        "https://i.dummyjson.com/data/products/15/3.jpg",
-        "https://i.dummyjson.com/data/products/15/4.jpg",
-        "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 16,
-      "title": "Hyaluronic Acid Serum",
-      "description": "L'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid",
-      "price": 19,
-      "discountPercentage": 13.31,
-      "rating": 4.83,
-      "stock": 110,
-      "colors": "L'Oreal Paris",
-      "category": "artcrafts",
-      "thumbnail": "https://i.dummyjson.com/data/products/16/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/16/1.png",
-        "https://i.dummyjson.com/data/products/16/2.webp",
-        "https://i.dummyjson.com/data/products/16/3.jpg",
-        "https://i.dummyjson.com/data/products/16/4.jpg",
-        "https://i.dummyjson.com/data/products/16/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 17,
-      "title": "Tree Oil 30ml",
-      "description": "Tea tree oil contains a number of compounds, including terpinen-4-ol, that have been shown to kill certain bacteria,",
-      "price": 12,
-      "discountPercentage": 4.09,
-      "rating": 4.52,
-      "stock": 78,
-      "colors": "Hemani Tea",
-      "category": "artcrafts",
-      "thumbnail": "https://i.dummyjson.com/data/products/17/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/17/1.jpg",
-        "https://i.dummyjson.com/data/products/17/2.jpg",
-        "https://i.dummyjson.com/data/products/17/3.jpg",
-        "https://i.dummyjson.com/data/products/17/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 18,
-      "title": "Oil Free Moisturizer 100ml",
-      "description": "Dermive Oil Free Moisturizer with SPF 20 is specifically formulated with ceramides, hyaluronic acid & sunscreen.",
-      "price": 40,
-      "discountPercentage": 13.1,
-      "rating": 4.56,
-      "stock": 88,
-      "colors": "Dermive",
-      "category": "artcrafts",
-      "thumbnail": "https://i.dummyjson.com/data/products/18/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/18/1.jpg",
-        "https://i.dummyjson.com/data/products/18/2.jpg",
-        "https://i.dummyjson.com/data/products/18/3.jpg",
-        "https://i.dummyjson.com/data/products/18/4.jpg",
-        "https://i.dummyjson.com/data/products/18/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 19,
-      "title": "Skin Beauty Serum.",
-      "description": "Product name: rorec collagen hyaluronic acid white face serum riceNet weight: 15 m",
-      "price": 46,
-      "discountPercentage": 10.68,
-      "rating": 4.42,
-      "stock": 54,
-      "colors": "ROREC White Rice",
-      "category": "artcrafts",
-      "thumbnail": "https://i.dummyjson.com/data/products/19/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/19/1.jpg",
-        "https://i.dummyjson.com/data/products/19/2.jpg",
-        "https://i.dummyjson.com/data/products/19/3.png",
-        "https://i.dummyjson.com/data/products/19/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 20,
-      "title": "Freckle Treatment Cream- 15gm",
-      "description": "Fair & Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
-      "price": 70,
-      "discountPercentage": 16.99,
-      "rating": 4.06,
-      "stock": 140,
-      "colors": "Fair & Clear",
-      "category": "seasonal-items-items",
-      "thumbnail": "https://i.dummyjson.com/data/products/20/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/20/1.jpg",
-        "https://i.dummyjson.com/data/products/20/2.jpg",
-        "https://i.dummyjson.com/data/products/20/3.jpg",
-        "https://i.dummyjson.com/data/products/20/4.jpg",
-        "https://i.dummyjson.com/data/products/20/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 21,
-      "title": "- Daal Masoor 500 grams",
-      "description": "Fine quality colored Product Keep in a cool and dry place",
-      "price": 20,
-      "discountPercentage": 4.81,
-      "rating": 4.44,
-      "stock": 133,
-      "colors": "Saaf & Khaas",
-      "category": "clothings",
-      "thumbnail": "https://i.dummyjson.com/data/products/21/thumbnail.png",
-      "images": [
-        "https://i.dummyjson.com/data/products/21/1.png",
-        "https://i.dummyjson.com/data/products/21/2.jpg",
-        "https://i.dummyjson.com/data/products/21/3.jpg"
-      ]
-    },
-    {
-      "id": 22,
-      "title": "Elbow Macaroni - 400 gm",
-      "description": "Product details of Bake Parlor Big Elbow Macaroni - 400 gm",
-      "price": 14,
-      "discountPercentage": 15.58,
-      "rating": 4.57,
-      "stock": 146,
-      "colors": "Bake Parlor Big",
-      "category": "clothings",
-      "thumbnail": "https://i.dummyjson.com/data/products/22/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/22/1.jpg",
-        "https://i.dummyjson.com/data/products/22/2.jpg",
-        "https://i.dummyjson.com/data/products/22/3.jpg"
-      ]
-    },
-    {
-      "id": 23,
-      "title": "Orange Essence Food Flavou",
-      "description": "Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item",
-      "price": 14,
-      "discountPercentage": 8.04,
-      "rating": 4.85,
-      "stock": 26,
-      "colors": "Baking Food Items",
-      "category": "seasonal-items",
-      "thumbnail": "https://i.dummyjson.com/data/products/23/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/23/1.jpg",
-        "https://i.dummyjson.com/data/products/23/2.jpg",
-        "https://i.dummyjson.com/data/products/23/3.jpg",
-        "https://i.dummyjson.com/data/products/23/4.jpg",
-        "https://i.dummyjson.com/data/products/23/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 24,
-      "title": "cereals muesli fruit nuts",
-      "description": "original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji",
-      "price": 46,
-      "discountPercentage": 16.8,
-      "rating": 4.94,
-      "stock": 113,
-      "colors": "fauji",
-      "category": "clothings",
-      "thumbnail": "https://i.dummyjson.com/data/products/24/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/24/1.jpg",
-        "https://i.dummyjson.com/data/products/24/2.jpg",
-        "https://i.dummyjson.com/data/products/24/3.jpg",
-        "https://i.dummyjson.com/data/products/24/4.jpg",
-        "https://i.dummyjson.com/data/products/24/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 25,
-      "title": "Gulab Powder 50 Gram",
-      "description": "Dry Rose Flower Powder Gulab Powder 50 Gram • Treats Wounds",
-      "price": 70,
-      "discountPercentage": 13.58,
-      "rating": 4.87,
-      "stock": 47,
-      "colors": "Dry Rose",
-      "category": "clothings",
-      "thumbnail": "https://i.dummyjson.com/data/products/25/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/25/1.png",
-        "https://i.dummyjson.com/data/products/25/2.jpg",
-        "https://i.dummyjson.com/data/products/25/3.png",
-        "https://i.dummyjson.com/data/products/25/4.jpg",
-        "https://i.dummyjson.com/data/products/25/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 26,
-      "title": "Plant Hanger For Home",
-      "description": "Boho Decor Plant Hanger For Home Wall Decoration Macrame Wall Hanging Shelf",
-      "price": 41,
-      "discountPercentage": 17.86,
-      "rating": 4.08,
-      "stock": 131,
-      "colors": "Boho Decor",
-      "category": "seasonal-items",
-      "thumbnail": "https://i.dummyjson.com/data/products/26/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/26/1.jpg",
-        "https://i.dummyjson.com/data/products/26/2.jpg",
-        "https://i.dummyjson.com/data/products/26/3.jpg",
-        "https://i.dummyjson.com/data/products/26/4.jpg",
-        "https://i.dummyjson.com/data/products/26/5.jpg",
-        "https://i.dummyjson.com/data/products/26/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 27,
-      "title": "Flying Wooden Bird",
-      "description": "Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm",
-      "price": 51,
-      "discountPercentage": 15.58,
-      "rating": 4.41,
-      "stock": 17,
-      "colors": "Flying Wooden",
+      "title": "Crafty bengles",
+      "description": "These glass bangles are made to represent the tradition of Bengal. All Aranya products are handmade, using natural materials, within a fair trade framework.",
+      "color": "",
       "category": "crafts-cosmetics",
-      "thumbnail": "https://i.dummyjson.com/data/products/27/thumbnail.webp",
+      "price": 1299,
+      "discountPercentage": 4,
+      "stock": 50,
+      "thumbnail": "https://t1.thpservices.com/previewimage/gallil/2da0f976ed69699cbf2fbc985330a009/pbg-pb101141.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/27/1.jpg",
-        "https://i.dummyjson.com/data/products/27/2.jpg",
-        "https://i.dummyjson.com/data/products/27/3.jpg",
-        "https://i.dummyjson.com/data/products/27/4.jpg",
-        "https://i.dummyjson.com/data/products/27/thumbnail.webp"
-      ]
-    },
-    {
-      "id": 28,
-      "title": "3D Embellishment Art Lamp",
-      "description": "3D led lamp sticker Wall sticker 3d wall art light on/off button  cell operated (included)",
-      "price": 20,
-      "discountPercentage": 16.49,
-      "rating": 4.82,
-      "stock": 54,
-      "colors": "LED Lights",
-      "category": "crafts-cosmetics",
-      "thumbnail": "https://i.dummyjson.com/data/products/28/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/28/1.jpg",
-        "https://i.dummyjson.com/data/products/28/2.jpg",
-        "https://i.dummyjson.com/data/products/28/3.png",
-        "https://i.dummyjson.com/data/products/28/4.jpg",
-        "https://i.dummyjson.com/data/products/28/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 29,
-      "title": "Handcraft Chinese style",
-      "description": "Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate",
-      "price": 60,
-      "discountPercentage": 15.34,
-      "rating": 4.44,
-      "stock": 7,
-      "colors": "luxury palace",
-      "category": "crafts-cosmetics",
-      "thumbnail": "https://i.dummyjson.com/data/products/29/thumbnail.webp",
-      "images": [
-        "https://i.dummyjson.com/data/products/29/1.jpg",
-        "https://i.dummyjson.com/data/products/29/2.jpg",
-        "https://i.dummyjson.com/data/products/29/3.webp",
-        "https://i.dummyjson.com/data/products/29/4.webp",
-        "https://i.dummyjson.com/data/products/29/thumbnail.webp"
-      ]
-    },
-    {
-      "id": 30,
-      "title": "Key Holder",
-      "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
-      "price": 30,
-      "discountPercentage": 2.92,
-      "rating": 4.92,
-      "stock": 54,
-      "colors": "Golden",
-      "category": "crafts-cosmetics",
-      "thumbnail": "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/30/1.jpg",
-        "https://i.dummyjson.com/data/products/30/2.jpg",
-        "https://i.dummyjson.com/data/products/30/3.jpg",
-        "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 31,
-      "title": "Key Holder",
-      "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
-      "price": 30,
-      "discountPercentage": 2.92,
-      "rating": 4.92,
-      "stock": 54,
-      "colors": "Golden",
-      "category": "crafts-cosmetics",
-      "thumbnail": "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/30/1.jpg",
-        "https://i.dummyjson.com/data/products/30/2.jpg",
-        "https://i.dummyjson.com/data/products/30/3.jpg",
-        "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 32,
-      "title": "Key Holder",
-      "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
-      "price": 30,
-      "discountPercentage": 2.92,
-      "rating": 4.92,
-      "stock": 54,
-      "colors": "Golden",
-      "category": "crafts-cosmetics",
-      "thumbnail": "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/30/1.jpg",
-        "https://i.dummyjson.com/data/products/30/2.jpg",
-        "https://i.dummyjson.com/data/products/30/3.jpg",
-        "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 33,
-      "title": "Key Holder",
-      "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
-      "price": 30,
-      "discountPercentage": 2.92,
-      "rating": 4.92,
-      "stock": 54,
-      "colors": "Golden",
-      "category": "crafts-cosmetics",
-      "thumbnail": "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/30/1.jpg",
-        "https://i.dummyjson.com/data/products/30/2.jpg",
-        "https://i.dummyjson.com/data/products/30/3.jpg",
-        "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 34,
-      "title": "Key Holder",
-      "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
-      "price": 30,
-      "discountPercentage": 2.92,
-      "rating": 4.92,
-      "stock": 54,
-      "colors": "Golden",
-      "category": "crafts-cosmetics",
-      "thumbnail": "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/30/1.jpg",
-        "https://i.dummyjson.com/data/products/30/2.jpg",
-        "https://i.dummyjson.com/data/products/30/3.jpg",
-        "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 35,
-      "title": "Key Holder",
-      "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
-      "price": 30,
-      "discountPercentage": 2.92,
-      "rating": 4.92,
-      "stock": 54,
-      "colors": "Golden",
-      "category": "crafts-cosmetics",
-      "thumbnail": "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/30/1.jpg",
-        "https://i.dummyjson.com/data/products/30/2.jpg",
-        "https://i.dummyjson.com/data/products/30/3.jpg",
-        "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": 36,
-      "title": "Key Holder",
-      "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
-      "price": 30,
-      "discountPercentage": 2.92,
-      "rating": 4.92,
-      "stock": 54,
-      "colors": "Golden",
-      "category": "crafts-cosmetics",
-      "thumbnail": "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/30/1.jpg",
-        "https://i.dummyjson.com/data/products/30/2.jpg",
-        "https://i.dummyjson.com/data/products/30/3.jpg",
-        "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
-      ]
+        "https://pbs.twimg.com/media/DmZUyGxUwAEOY9A.jpg",
+        "https://aristaexport.com/images/products/318-unique-collection-of-bangle-stand-import-from-bangladesh-1.jpg",
+        "2wCEAAkGBxITEhUTExMWFhUXGR4bGRgYGB0eHhseHR4eGh4eIBsdICggGB8lHx8XITMhJSkrLi4uHSAzODMtNygtLisBCgoKDg0OGxAQGy0mICYtLS8vLS8tLS0tLystLS0tLS8tLS0tLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf",
+        "https://t1.thpservices.com/previewimage/gallil/2da0f976ed69699cbf2fbc985330a009/pbg-pb101141.jpg"
+      ],
+      "rating": 0,
+      "id": 45
     }
   ],
   "colors": [
@@ -754,318 +292,124 @@
           "pinCode": "4700"
         }
       ],
+      "role": "user",
       "id": 1
     },
     {
-      "email": "forituse2019@gmail.com",
-      "password": "Fahim123",
+      "email": "admin@gmail.com",
+      "password": "Abc123",
       "addresses": [],
-      "id": 2
+      "role": "admin",
+      "id": 3
+    },
+    {
+      "email": "fahim72@gmail.com",
+      "password": "Abc12345",
+      "addresses": [
+        {
+          "name": "Ishaq Md. Fahim",
+          "email": "Imfahim72@gmail.com",
+          "phone": "01876-721272",
+          "street": "Cox'sbazar,Bangladesh",
+          "city": "Chittagong",
+          "state": "Cox'sbazar",
+          "pinCode": "4700",
+          "transaction id": ""
+        }
+      ],
+      "role": "user",
+      "id": 4
     }
   ],
   "cart": [
     {
-      "title": "OPPOF19",
-      "description": "OPPO F19 is officially announced on April 2021.",
-      "price": 280,
-      "discountPercentage": 17.91,
-      "rating": 4.3,
-      "stock": 123,
-      "colors": "OPPO",
+      "title": "Nolen Gurer Sondesh",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      "price": 899,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 40,
+      "colors": "Apple",
       "category": "sweets-dessert",
-      "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+      "thumbnail": "https://i0.wp.com/thegastronomicbong.com/wp-content/uploads/2019/10/gurer-sandesh-recipe-step-by-step.jpg?fit=5225%2C7838&ssl=1",
       "images": [
-        "https://i.dummyjson.com/data/products/4/1.jpg",
-        "https://i.dummyjson.com/data/products/4/2.jpg",
-        "https://i.dummyjson.com/data/products/4/3.jpg",
-        "https://i.dummyjson.com/data/products/4/4.jpg",
-        "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+        "https://motionsandemotions.com/wp-content/uploads/2023/04/Untitled-design-56-1-1024x1024.jpg",
+        "https://1.bp.blogspot.com/-QE3glcC658E/X1knED5xYfI/AAAAAAAAL_M/8w1XKCk-l90PCoWtpD0_gR_2QU-L9J7hwCLcBGAsYHQ/s1600/Nolen%2Bgurer%2BSandesh.JPG",
+        "https://www.bongcravings.com/wp-content/uploads/2017/05/17191324_768471046635728_1142348009439145681_n.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhlTXCfuig0D2gpeIPIbvn2m_blv8FF3V7dkKomgCrsNyhEB7I1Qrth1457IbTZFnZmGsUccp0CiZTezzG-C7eiK1psH_NW8lqd_oHk8BW4z6cLG6gpdTaEwxJi13QxlmXL5ist29pnX4UDg0J1lP7dihxGfdBgPVIQRIg6HAjV0flWAHxiITQ1Tma/s3933/phonto.jpg"
       ],
-      "quantity": 5,
-      "user": 2,
-      "id": 1
-    },
-    {
-      "title": "Microsoft Surface Laptop 4",
-      "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
-      "price": 1499,
-      "discountPercentage": 10.23,
-      "rating": 4.43,
-      "stock": 68,
-      "colors": "Microsoft Surface",
-      "category": "foods",
-      "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/8/1.jpg",
-        "https://i.dummyjson.com/data/products/8/2.jpg",
-        "https://i.dummyjson.com/data/products/8/3.jpg",
-        "https://i.dummyjson.com/data/products/8/4.jpg",
-        "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
-      ],
-      "quantity": 5,
-      "user": 2,
+      "productId": 2,
+      "quantity": 1,
       "id": 2
     },
     {
-      "title": "Brown Perfume",
-      "description": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
-      "price": 40,
-      "discountPercentage": 15.66,
-      "rating": 4,
-      "stock": 52,
-      "colors": "Royal_Mirage",
-      "category": "fruits",
-      "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
+      "title": "RoshoGolla",
+      "description": "Rosogolla is based on the real-life story of the inventor of Bengal's own 'Rosogolla'. The story revolves around the life and work of Nobin Chandra Das, a young man with a romantic heart and a brilliant mind.",
+      "price": 599,
+      "discountPercentage": 12.96,
+      "rating": 4.69,
+      "stock": 94,
+      "colors": "Apple",
+      "category": "sweets-dessert",
+      "thumbnail": "https://kitchenofdebjani.com/wp-content/uploads/2023/01/khejur-gurer-rosogolla-Recipe-Debjanir-Rannaghar.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/12/1.jpg",
-        "https://i.dummyjson.com/data/products/12/2.jpg",
-        "https://i.dummyjson.com/data/products/12/3.png",
-        "https://i.dummyjson.com/data/products/12/4.jpg",
-        "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
+        "https://static.toiimg.com/thumb/msid-67284341,width-1280,resizemode-4/67284341.jpg",
+        "https://www.playfulcooking.com/wp-content/uploads/2020/10/roshogolla-06.jpg",
+        "https://1.bp.blogspot.com/-XZyf6ZRQY1I/XgtDF8MAUmI/AAAAAAAAIck/6r8I0gS8ziYU781V97zIf68njOTHAH2vQCEwYBhgL/s1600/Nolen%2BGur%2BRosogolla.JPG",
+        "https://kitchenofdebjani.com/wp-content/uploads/2023/01/khejur-gurer-rosogolla-Recipe-Debjanir-Rannaghar.jpg"
       ],
-      "quantity": 3,
-      "user": 2,
+      "productId": 1,
+      "quantity": 1,
       "id": 3
-    },
-    {
-      "title": "OPPOF19",
-      "description": "OPPO F19 is officially announced on April 2021.",
-      "price": 280,
-      "discountPercentage": 17.91,
-      "rating": 4.3,
-      "stock": 123,
-      "colors": "OPPO",
-      "category": "sweets-dessert",
-      "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/4/1.jpg",
-        "https://i.dummyjson.com/data/products/4/2.jpg",
-        "https://i.dummyjson.com/data/products/4/3.jpg",
-        "https://i.dummyjson.com/data/products/4/4.jpg",
-        "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
-      ],
-      "quantity": 1,
-      "user": 1,
-      "id": 4
-    },
-    {
-      "title": "iPhone 9",
-      "description": "An apple mobile whoodsich is nothing like apple",
-      "price": 549,
-      "discountPercentage": 12.96,
-      "rating": 4.69,
-      "stock": 94,
-      "colors": "Apple",
-      "category": "sweets-dessert",
-      "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/1/1.jpg",
-        "https://i.dummyjson.com/data/products/1/2.jpg",
-        "https://i.dummyjson.com/data/products/1/3.jpg",
-        "https://i.dummyjson.com/data/products/1/4.jpg",
-        "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-      ],
-      "quantity": 1,
-      "user": 1,
-      "id": 5
-    },
-    {
-      "title": "iPhone 9",
-      "description": "An apple mobile whoodsich is nothing like apple",
-      "price": 549,
-      "discountPercentage": 12.96,
-      "rating": 4.69,
-      "stock": 94,
-      "colors": "Apple",
-      "category": "sweets-dessert",
-      "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/1/1.jpg",
-        "https://i.dummyjson.com/data/products/1/2.jpg",
-        "https://i.dummyjson.com/data/products/1/3.jpg",
-        "https://i.dummyjson.com/data/products/1/4.jpg",
-        "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-      ],
-      "quantity": 1,
-      "user": 1,
-      "id": 6
     }
   ],
   "orders": [
     {
       "items": [
         {
-          "title": "MacBook Pro",
-          "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
-          "price": 1749,
-          "discountPercentage": 11.02,
-          "rating": 4.57,
-          "stock": 83,
+          "title": "RoshoGolla",
+          "description": "Rosogolla is based on the real-life story of the inventor of Bengal's own 'Rosogolla'. The story revolves around the life and work of Nobin Chandra Das, a young man with a romantic heart and a brilliant mind.",
+          "price": 549,
+          "discountPercentage": 12.96,
+          "rating": 4.69,
+          "stock": 94,
           "colors": "Apple",
-          "category": "foods",
-          "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+          "category": "sweets-dessert",
+          "thumbnail": "https://kitchenofdebjani.com/wp-content/uploads/2023/01/khejur-gurer-rosogolla-Recipe-Debjanir-Rannaghar.jpg",
           "images": [
-            "https://i.dummyjson.com/data/products/6/1.png",
-            "https://i.dummyjson.com/data/products/6/2.jpg",
-            "https://i.dummyjson.com/data/products/6/3.png",
-            "https://i.dummyjson.com/data/products/6/4.jpg"
+            "https://static.toiimg.com/thumb/msid-67284341,width-1280,resizemode-4/67284341.jpg",
+            "https://www.playfulcooking.com/wp-content/uploads/2020/10/roshogolla-06.jpg",
+            "https://1.bp.blogspot.com/-XZyf6ZRQY1I/XgtDF8MAUmI/AAAAAAAAIck/6r8I0gS8ziYU781V97zIf68njOTHAH2vQCEwYBhgL/s1600/Nolen%2BGur%2BRosogolla.JPG",
+            "https://kitchenofdebjani.com/wp-content/uploads/2023/01/khejur-gurer-rosogolla-Recipe-Debjanir-Rannaghar.jpg"
           ],
-          "quantity": 1,
+          "productId": 1,
+          "quantity": 3,
           "user": 1,
-          "id": 5
+          "id": 1
         },
         {
-          "title": "iPhone X",
+          "title": "Nolen Gurer Sondesh",
           "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
           "price": 899,
           "discountPercentage": 17.94,
           "rating": 4.44,
-          "stock": 34,
+          "stock": 40,
           "colors": "Apple",
           "category": "sweets-dessert",
-          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "thumbnail": "https://i0.wp.com/thegastronomicbong.com/wp-content/uploads/2019/10/gurer-sandesh-recipe-step-by-step.jpg?fit=5225%2C7838&ssl=1",
           "images": [
-            "https://i.dummyjson.com/data/products/2/1.jpg",
-            "https://i.dummyjson.com/data/products/2/2.jpg",
-            "https://i.dummyjson.com/data/products/2/3.jpg",
-            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+            "https://motionsandemotions.com/wp-content/uploads/2023/04/Untitled-design-56-1-1024x1024.jpg",
+            "https://1.bp.blogspot.com/-QE3glcC658E/X1knED5xYfI/AAAAAAAAL_M/8w1XKCk-l90PCoWtpD0_gR_2QU-L9J7hwCLcBGAsYHQ/s1600/Nolen%2Bgurer%2BSandesh.JPG",
+            "https://www.bongcravings.com/wp-content/uploads/2017/05/17191324_768471046635728_1142348009439145681_n.jpg",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhlTXCfuig0D2gpeIPIbvn2m_blv8FF3V7dkKomgCrsNyhEB7I1Qrth1457IbTZFnZmGsUccp0CiZTezzG-C7eiK1psH_NW8lqd_oHk8BW4z6cLG6gpdTaEwxJi13QxlmXL5ist29pnX4UDg0J1lP7dihxGfdBgPVIQRIg6HAjV0flWAHxiITQ1Tma/s3933/phonto.jpg"
           ],
+          "productId": 2,
           "quantity": 1,
           "user": 1,
-          "id": 6
-        },
-        {
-          "title": "HP Pavilion 15-DK1056WM",
-          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
-          "price": 1099,
-          "discountPercentage": 6.18,
-          "rating": 4.43,
-          "stock": 89,
-          "colors": "HP Pavilion",
-          "category": "foods",
-          "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
-          "images": [
-            "https://i.dummyjson.com/data/products/10/1.jpg",
-            "https://i.dummyjson.com/data/products/10/2.jpg",
-            "https://i.dummyjson.com/data/products/10/3.jpg",
-            "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
-          ],
-          "quantity": 1,
-          "user": 1,
-          "id": 7
+          "id": 2
         }
       ],
-      "totalAmount": 3747,
-      "totalItems": 3,
-      "user": {
-        "email": "Imfahim72@gmail.com",
-        "password": "F119674k@",
-        "addresses": [
-          {
-            "name": "Ishaq Md. Fahim",
-            "email": "Imfahim72@gmail.com",
-            "phone": "01876-721272",
-            "street": "Cox'sbazar,Bangladesh",
-            "city": "Chittagong",
-            "state": "Cox'sbazar",
-            "pinCode": "4700"
-          }
-        ],
-        "id": 1
-      },
-      "paymentMethod": "cash",
-      "selectedAddress": {
-        "name": "Ishaq Md. Fahim",
-        "email": "Imfahim72@gmail.com",
-        "phone": "01876-721272",
-        "street": "Cox'sbazar,Bangladesh",
-        "city": "Chittagong",
-        "state": "Cox'sbazar",
-        "pinCode": "4700"
-      },
-      "status": "pending",
-      "id": 1
-    },
-    {
-      "items": [
-        {
-          "title": "Brown Perfume",
-          "description": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
-          "price": 40,
-          "discountPercentage": 15.66,
-          "rating": 4,
-          "stock": 52,
-          "colors": "Royal_Mirage",
-          "category": "fruits",
-          "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
-          "images": [
-            "https://i.dummyjson.com/data/products/12/1.jpg",
-            "https://i.dummyjson.com/data/products/12/2.jpg",
-            "https://i.dummyjson.com/data/products/12/3.png",
-            "https://i.dummyjson.com/data/products/12/4.jpg",
-            "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
-          ],
-          "quantity": 1,
-          "user": 1,
-          "id": 4
-        }
-      ],
-      "totalAmount": 40,
-      "totalItems": 1,
-      "user": {
-        "email": "Imfahim72@gmail.com",
-        "password": "F119674k@",
-        "addresses": [
-          {
-            "name": "Ishaq Md. Fahim",
-            "email": "Imfahim72@gmail.com",
-            "phone": "01876-721272",
-            "street": "Cox'sbazar,Bangladesh",
-            "city": "Chittagong",
-            "state": "Cox'sbazar",
-            "pinCode": "4700"
-          }
-        ],
-        "id": 1
-      },
-      "paymentMethod": "card",
-      "selectedAddress": {
-        "name": "Ishaq Md. Fahim",
-        "email": "Imfahim72@gmail.com",
-        "phone": "01876-721272",
-        "street": "Cox'sbazar,Bangladesh",
-        "city": "Chittagong",
-        "state": "Cox'sbazar",
-        "pinCode": "4700"
-      },
-      "status": "pending",
-      "id": 2
-    },
-    {
-      "items": [
-        {
-          "title": "OPPOF19",
-          "description": "OPPO F19 is officially announced on April 2021.",
-          "price": 280,
-          "discountPercentage": 17.91,
-          "rating": 4.3,
-          "stock": 123,
-          "colors": "OPPO",
-          "category": "sweets-dessert",
-          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
-          "images": [
-            "https://i.dummyjson.com/data/products/4/1.jpg",
-            "https://i.dummyjson.com/data/products/4/2.jpg",
-            "https://i.dummyjson.com/data/products/4/3.jpg",
-            "https://i.dummyjson.com/data/products/4/4.jpg",
-            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
-          ],
-          "quantity": 4,
-          "user": 1,
-          "id": 4
-        }
-      ],
-      "totalAmount": 1120,
+      "totalAmount": 2172,
       "totalItems": 4,
       "user": {
         "email": "Imfahim72@gmail.com",
@@ -1090,6 +434,137 @@
             "pinCode": "4700"
           }
         ],
+        "role": "user",
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ishaq Md. Fahim",
+        "email": "Imfahim72@gmail.com",
+        "phone": "01876-721272",
+        "street": "Cox'sbazar,Bangladesh",
+        "city": "Chittagong",
+        "state": "Cox'sbazar",
+        "pinCode": "4700"
+      },
+      "status": "delivered",
+      "id": 1
+    },
+    {
+      "items": [
+        {
+          "title": "RoshoGolla",
+          "description": "Rosogolla is based on the real-life story of the inventor of Bengal's own 'Rosogolla'. The story revolves around the life and work of Nobin Chandra Das, a young man with a romantic heart and a brilliant mind.",
+          "price": 599,
+          "discountPercentage": 12.96,
+          "rating": 4.69,
+          "stock": 94,
+          "colors": "Apple",
+          "category": "sweets-dessert",
+          "thumbnail": "https://kitchenofdebjani.com/wp-content/uploads/2023/01/khejur-gurer-rosogolla-Recipe-Debjanir-Rannaghar.jpg",
+          "images": [
+            "https://static.toiimg.com/thumb/msid-67284341,width-1280,resizemode-4/67284341.jpg",
+            "https://www.playfulcooking.com/wp-content/uploads/2020/10/roshogolla-06.jpg",
+            "https://1.bp.blogspot.com/-XZyf6ZRQY1I/XgtDF8MAUmI/AAAAAAAAIck/6r8I0gS8ziYU781V97zIf68njOTHAH2vQCEwYBhgL/s1600/Nolen%2BGur%2BRosogolla.JPG",
+            "https://kitchenofdebjani.com/wp-content/uploads/2023/01/khejur-gurer-rosogolla-Recipe-Debjanir-Rannaghar.jpg"
+          ],
+          "productId": 1,
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        }
+      ],
+      "totalAmount": 521,
+      "totalItems": 1,
+      "user": {
+        "email": "Imfahim72@gmail.com",
+        "password": "F119674k@",
+        "addresses": [
+          {
+            "name": "Ishaq Md. Fahim",
+            "email": "Imfahim72@gmail.com",
+            "phone": "01876-721272",
+            "street": "Cox'sbazar,Bangladesh",
+            "city": "Chittagong",
+            "state": "Cox'sbazar",
+            "pinCode": "4700"
+          },
+          {
+            "name": "Ishaq Md. Fahim",
+            "email": "Imfahim72@gmail.com",
+            "phone": "01876-721272",
+            "street": "Cox'sbazar,Bangladesh",
+            "city": "Chittagong",
+            "state": "Cox'sbazar",
+            "pinCode": "4700"
+          }
+        ],
+        "role": "user",
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ishaq Md. Fahim",
+        "email": "Imfahim72@gmail.com",
+        "phone": "01876-721272",
+        "street": "Cox'sbazar,Bangladesh",
+        "city": "Chittagong",
+        "state": "Cox'sbazar",
+        "pinCode": "4700"
+      },
+      "status": "delivered",
+      "id": 2
+    },
+    {
+      "items": [
+        {
+          "title": "Nolen Gurer Sondesh",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 40,
+          "colors": "Apple",
+          "category": "sweets-dessert",
+          "thumbnail": "https://i0.wp.com/thegastronomicbong.com/wp-content/uploads/2019/10/gurer-sandesh-recipe-step-by-step.jpg?fit=5225%2C7838&ssl=1",
+          "images": [
+            "https://motionsandemotions.com/wp-content/uploads/2023/04/Untitled-design-56-1-1024x1024.jpg",
+            "https://1.bp.blogspot.com/-QE3glcC658E/X1knED5xYfI/AAAAAAAAL_M/8w1XKCk-l90PCoWtpD0_gR_2QU-L9J7hwCLcBGAsYHQ/s1600/Nolen%2Bgurer%2BSandesh.JPG",
+            "https://www.bongcravings.com/wp-content/uploads/2017/05/17191324_768471046635728_1142348009439145681_n.jpg",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhlTXCfuig0D2gpeIPIbvn2m_blv8FF3V7dkKomgCrsNyhEB7I1Qrth1457IbTZFnZmGsUccp0CiZTezzG-C7eiK1psH_NW8lqd_oHk8BW4z6cLG6gpdTaEwxJi13QxlmXL5ist29pnX4UDg0J1lP7dihxGfdBgPVIQRIg6HAjV0flWAHxiITQ1Tma/s3933/phonto.jpg"
+          ],
+          "productId": 2,
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        }
+      ],
+      "totalAmount": 738,
+      "totalItems": 1,
+      "user": {
+        "email": "Imfahim72@gmail.com",
+        "password": "F119674k@",
+        "addresses": [
+          {
+            "name": "Ishaq Md. Fahim",
+            "email": "Imfahim72@gmail.com",
+            "phone": "01876-721272",
+            "street": "Cox'sbazar,Bangladesh",
+            "city": "Chittagong",
+            "state": "Cox'sbazar",
+            "pinCode": "4700"
+          },
+          {
+            "name": "Ishaq Md. Fahim",
+            "email": "Imfahim72@gmail.com",
+            "phone": "01876-721272",
+            "street": "Cox'sbazar,Bangladesh",
+            "city": "Chittagong",
+            "state": "Cox'sbazar",
+            "pinCode": "4700"
+          }
+        ],
+        "role": "user",
         "id": 1
       },
       "paymentMethod": "cash",
@@ -1108,32 +583,32 @@
     {
       "items": [
         {
-          "title": "iPhone 9",
-          "description": "An apple mobile whoodsich is nothing like apple",
-          "price": 549,
-          "discountPercentage": 12.96,
-          "rating": 4.69,
-          "stock": 94,
-          "colors": "Apple",
+          "title": "Chomchom-2",
+          "description": "Cham cham, Chomchom or chum chum (Bengali: চমচম) is a traditional Bengali sweet, popular throughout the Indian subcontinent.",
+          "color": "",
           "category": "sweets-dessert",
-          "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+          "price": 450,
+          "discountPercentage": 2,
+          "stock": 40,
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/BD_Porabarir_Chamcham.JPG/1200px-BD_Porabarir_Chamcham.JPG",
           "images": [
-            "https://i.dummyjson.com/data/products/1/1.jpg",
-            "https://i.dummyjson.com/data/products/1/2.jpg",
-            "https://i.dummyjson.com/data/products/1/3.jpg",
-            "https://i.dummyjson.com/data/products/1/4.jpg",
-            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+            "https://roshbd.com/wp-content/uploads/2016/11/rosh-chomchom-1.jpg",
+            "https://i.ytimg.com/vi/v-CwFvbPuTk/maxresdefault.jpg",
+            "https://i.ytimg.com/vi/ADn1-UImPQU/maxresdefault.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/BD_Porabarir_Chamcham.JPG/1200px-BD_Porabarir_Chamcham.JPG"
           ],
+          "rating": 0,
+          "productId": 38,
           "quantity": 1,
-          "user": 1,
-          "id": 4
+          "user": 4,
+          "id": 2
         }
       ],
-      "totalAmount": 549,
+      "totalAmount": 441,
       "totalItems": 1,
       "user": {
-        "email": "Imfahim72@gmail.com",
-        "password": "F119674k@",
+        "email": "fahim72@gmail.com",
+        "password": "Abc12345",
         "addresses": [
           {
             "name": "Ishaq Md. Fahim",
@@ -1142,19 +617,12 @@
             "street": "Cox'sbazar,Bangladesh",
             "city": "Chittagong",
             "state": "Cox'sbazar",
-            "pinCode": "4700"
-          },
-          {
-            "name": "Ishaq Md. Fahim",
-            "email": "Imfahim72@gmail.com",
-            "phone": "01876-721272",
-            "street": "Cox'sbazar,Bangladesh",
-            "city": "Chittagong",
-            "state": "Cox'sbazar",
-            "pinCode": "4700"
+            "pinCode": "4700",
+            "transaction id": ""
           }
         ],
-        "id": 1
+        "role": "user",
+        "id": 4
       },
       "paymentMethod": "cash",
       "selectedAddress": {
@@ -1164,7 +632,8 @@
         "street": "Cox'sbazar,Bangladesh",
         "city": "Chittagong",
         "state": "Cox'sbazar",
-        "pinCode": "4700"
+        "pinCode": "4700",
+        "transaction id": ""
       },
       "status": "pending",
       "id": 4
@@ -1172,29 +641,29 @@
     {
       "items": [
         {
-          "title": "Microsoft Surface Laptop 4",
-          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
-          "price": 1499,
-          "discountPercentage": 10.23,
-          "rating": 4.43,
-          "stock": 68,
-          "colors": "Microsoft Surface",
-          "category": "foods",
-          "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+          "title": "RoshoGolla",
+          "description": "Rosogolla is based on the real-life story of the inventor of Bengal's own 'Rosogolla'. The story revolves around the life and work of Nobin Chandra Das, a young man with a romantic heart and a brilliant mind.",
+          "price": 599,
+          "discountPercentage": 12.96,
+          "rating": 4.69,
+          "stock": 94,
+          "colors": "Apple",
+          "category": "sweets-dessert",
+          "thumbnail": "https://kitchenofdebjani.com/wp-content/uploads/2023/01/khejur-gurer-rosogolla-Recipe-Debjanir-Rannaghar.jpg",
           "images": [
-            "https://i.dummyjson.com/data/products/8/1.jpg",
-            "https://i.dummyjson.com/data/products/8/2.jpg",
-            "https://i.dummyjson.com/data/products/8/3.jpg",
-            "https://i.dummyjson.com/data/products/8/4.jpg",
-            "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+            "https://static.toiimg.com/thumb/msid-67284341,width-1280,resizemode-4/67284341.jpg",
+            "https://www.playfulcooking.com/wp-content/uploads/2020/10/roshogolla-06.jpg",
+            "https://1.bp.blogspot.com/-XZyf6ZRQY1I/XgtDF8MAUmI/AAAAAAAAIck/6r8I0gS8ziYU781V97zIf68njOTHAH2vQCEwYBhgL/s1600/Nolen%2BGur%2BRosogolla.JPG",
+            "https://kitchenofdebjani.com/wp-content/uploads/2023/01/khejur-gurer-rosogolla-Recipe-Debjanir-Rannaghar.jpg"
           ],
-          "quantity": 1,
+          "productId": 1,
+          "quantity": 3,
           "user": 1,
-          "id": 4
+          "id": 1
         }
       ],
-      "totalAmount": 1499,
-      "totalItems": 1,
+      "totalAmount": 1563,
+      "totalItems": 3,
       "user": {
         "email": "Imfahim72@gmail.com",
         "password": "F119674k@",
@@ -1218,9 +687,10 @@
             "pinCode": "4700"
           }
         ],
+        "role": "user",
         "id": 1
       },
-      "paymentMethod": "cash",
+      "paymentMethod": "card",
       "selectedAddress": {
         "name": "Ishaq Md. Fahim",
         "email": "Imfahim72@gmail.com",

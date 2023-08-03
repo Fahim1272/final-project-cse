@@ -1,15 +1,19 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { discountedPrice } from '../../app/constants';
-import {deleteItemFromCartAsync,selectItems,updateCartAsync,} from './cartSlice';
+import { deleteItemFromCartAsync, selectCartStatus, selectItems, updateCartAsync, } from './cartSlice';
 import { Link } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
+import { BallTriangle } from 'react-loader-spinner';
+import Modal from '../common/Modal';
 
 
 export function Cart() {
   const dispatch = useDispatch();
 
   const items = useSelector(selectItems);
+  const status = useSelector(selectCartStatus)
+  const [openModal, setOpenModal] = useState(null)
   const totalAmount = items.reduce(
     (amount, item) => discountedPrice(item) * item.quantity + amount,
     0
@@ -35,6 +39,17 @@ export function Cart() {
               Cart
             </h1>
             <div className="flow-root">
+              {status === 'loading' ?
+                <BallTriangle
+                  height={100}
+                  width={100}
+                  radius={5}
+                  color="#4fa94d"
+                  ariaLabel="ball-triangle-loading"
+                  wrapperClass={{}}
+                  wrapperStyle=""
+                  visible={true}
+                /> : null}
               <ul className="-my-6 divide-y divide-gray-200">
                 {items.map((item) => (
                   <li key={item.id} className="flex py-6">
@@ -79,10 +94,19 @@ export function Cart() {
                         </div>
 
                         <div className="flex">
+                          <Modal
+                            title={`Delete ${item.title}`}
+                            message={"Are sure to delete?"}
+                            dangerOption={"Delete"}
+                            cancelOption={"Cancel"}
+                            dangerAction={(e) => handleRemove(e, item.id)}
+                            cancelAction={()=>setOpenModal(null)}
+                            showModal={openModal === item.id }
+                          ></Modal>
                           <button
-                            onClick={(e) => handleRemove(e, item.id)}
+                            onClick={e=>{setOpenModal(item.id)}}
                             type="button"
-                            className="font-medium text-indigo-600 hover:text-indigo-500"
+                            className="font-medium text-green-600 hover:text-green-500"
                           >
                             Remove
                           </button>
@@ -110,20 +134,20 @@ export function Cart() {
             <div className="mt-6">
               <Link
                 to="/checkout"
-                className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                className="flex items-center justify-center rounded-md border border-transparent bg-green-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-green-700"
               >
                 Checkout
               </Link>
             </div>
             <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
               <p>
-                or
-                <Link to="/">
+                or 
+                 <Link to="/">
                   <button
                     type="button"
-                    className="font-medium text-indigo-600 hover:text-indigo-500"
+                    className="font-medium text-green-600 hover:text-green-500"
                   >
-                    Continue Shopping
+                     Continue Shopping
                     <span aria-hidden="true"> &rarr;</span>
                   </button>
                 </Link>

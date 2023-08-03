@@ -42,6 +42,8 @@ export default function AdminProductList() {
   const colors = useSelector(selectColors);
   const categories = useSelector(selectCategories);
   const totalItems = useSelector(selectTotalItems);
+  const [query, setQuery] = useState("");
+
   const filters = [
     {
       id: 'category',
@@ -122,6 +124,19 @@ export default function AdminProductList() {
             </h1>
 
             <div className="flex items-center">
+            <div className=" mr-4 relative  rounded-2xl shadow-sm">
+                    <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                      <span className="text-gray-500 sm:text-sm"></span>
+                    </div>
+                    <input
+                    onChange={e=>setQuery(e.target.value)}
+                      type="text"
+                      name="price"
+                      id="price"
+                      className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
+                      placeholder="Search Product here"
+                    />
+                  </div>
               <Menu as="div" className="relative inline-block text-left">
                 <div>
                   <Menu.Button className="group inline-flex justify-center text-sm font-medium text-gray-700 hover:text-gray-900">
@@ -206,7 +221,7 @@ export default function AdminProductList() {
                     Add New Product
                   </Link>
                 </div>
-                <ProductGrid products={products}></ProductGrid>
+                <ProductGrid products={products} query={query}></ProductGrid>
               </div>
               {/* Product grid end */}
             </div>
@@ -476,12 +491,12 @@ function Pagination({ page, setPage, handlePage, totalItems }) {
   );
 }
 
-function ProductGrid({ products }) {
+function ProductGrid({ products, query }) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-0 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8">
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-          {products.map((product) => (
+          {products.filter(product=>product.title.toLowerCase().includes(query)).map(product =>  (
             <div>
               <Link to={`/product-detail/${product.id}`} key={product.id}>
                 <div className="group relative border-solid border-2 p-2 border-gray-200">
